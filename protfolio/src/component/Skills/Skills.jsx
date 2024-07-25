@@ -11,7 +11,10 @@ const Skills = () => {
 
   return (
     <Container>
-      <div id={"Skills"} className=" text-center  font-medium text-designColor rounded-lg shadow-lg">
+      <div
+        id={"Skills"}
+        className=" text-center  font-medium text-designColor rounded-lg shadow-lg"
+      >
         <Marquee gradient={false}>
           <div className="text-4xl">
             <ul>
@@ -30,7 +33,7 @@ const Skills = () => {
               ].map((skill, index) => (
                 <motion.li
                   key={index}
-                  className="inline-block px-6 py-2 mx-4 my-2 border-2 border-white rounded-lg text-text-1 font-medium hover:bg-lightColor/20 hover:text-lightColor transition-colors duration-300"
+                  className="inline-block px-6 py-2 mx-4 my-2 border-2 border-white rounded-lg text-text-1 font-medium hover:bg-lightColor/20 hover:text-lightColor transition-colors duration-300 "
                   variants={skillVariants}
                   initial="hidden"
                   animate="visible"

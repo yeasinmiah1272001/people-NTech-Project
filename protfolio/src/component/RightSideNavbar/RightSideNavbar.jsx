@@ -14,15 +14,20 @@ const RightSideNavbar = () => {
   };
 
   return (
-    <div className="fixed top-0 -right-24 mt-80 transform rotate-90 z-30 hidden md:block">
-      <motion.a
-        href="mailto:yeasinmiah1272001@gmail.com"
-        className="block text-designColor py-2 px-4 rounded-lg"
+    <div className="fixed top-0 lg:flex  -right-32 mt-96 transform rotate-90 z-30 hidden md:block">
+      <motion.div
         initial={initialAnimation}
         animate={animate}
+        className="relative"
       >
-        <p className="text-sm tracking-widest">yeasinmiah1272001@gmail.com</p>
-      </motion.a>
+        <a href="#" className="block text-designColor py-2 px-4 rounded-lg">
+          <p className="text-sm tracking-widest items-center text-center">
+            <span>yeasinmiah1272001@gmail.com</span>
+
+            <span className="">____________</span>
+          </p>
+        </a>
+      </motion.div>
     </div>
   );
 };

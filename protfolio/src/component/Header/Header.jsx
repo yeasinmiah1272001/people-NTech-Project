@@ -1,11 +1,14 @@
-
-import resume from "../../assets/resume.pdf"
+import resume from "../../assets/resume.pdf";
 import { Link } from "react-scroll";
-import logo from "../../assets/logo.png";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import logo from "../../assets/nameLogo.png"
 
 const Header = () => {
+  const location = useLocation();
+  const pathName = location.pathname;
+  console.log(pathName, "pathename");
   const navigation = [
     { title: "Home", path: "Home", value: "" },
     { title: "About", path: "About", value: "01", delay: 0.1 },
@@ -22,11 +25,11 @@ const Header = () => {
   };
 
   return (
-    <div className="h-20  shadow-lg  lg:px-0 sticky top-0 z-50 bg-primaryColor">
+    <div className="h-20  shadow-lg shadow-designColor/10  lg:px-0 sticky top-0 z-50 bg-primaryColor">
       <div className="flex justify-between items-center h-full  lg:px-6">
         <img
-          className="lg:w-32 w-20 lg:mr-0  h-24  opacity-75 hover:opacity-100"
-          src="https://i.ibb.co/R6T8RrV/360-F-499351530-9-QQXlfvsu-W88-FRcz-JKjh8-F3-Vl-JEDAerp-removebg-preview.png"
+          className="lg:w-32 w-20 lg:mr-0  h-24  opacity-80 hover:opacity-100"
+          src={logo}
           alt="Logo"
         />
         <div className="hidden lg:flex gap-7 items-center">

@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../Container/Container";
-import {  FaCode } from "react-icons/fa";
-
+import { FaCode } from "react-icons/fa";
 import yeasin from "../../assets/bgimg.png";
 import { motion } from "framer-motion";
 
@@ -20,8 +19,8 @@ const About = () => {
         </h1>
         <p className="text-lightColor mb-4">
           Hello! My name is Yeasin Ahmed and I enjoy creating things that live
-          on the internet. My interest in web development started back in
-          2022 when I decided to try editing custom <br />
+          on the internet. My interest in web development started back in 2022
+          when I decided to try editing custom <br />
           Tumblr themes — turns out hacking together a custom reblog button
           taught me a lot about HTML & CSS, Javascript, react js, nodejs etc!
         </p>
@@ -60,7 +59,7 @@ const About = () => {
 };
 
 const SkillItem = ({ text }) => (
-  <div className="flex gap-2 items-center my-3 hover:text-designColor">
+  <div className="flex gap-2 items-center my-3 transition-transform transform hover:scale-110 hover:text-designColor">
     <FaCode className="text-designColor" />
     {text}
   </div>

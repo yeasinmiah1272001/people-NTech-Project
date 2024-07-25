@@ -17,7 +17,6 @@ const WorkCard = ({ jobtitle, des }) => {
           <FaShare className="text-designColor mr-2" />
           <p className="mb-2">{des}</p>
         </div>
-      
       </div>
     </div>
   );

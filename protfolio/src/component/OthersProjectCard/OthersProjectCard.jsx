@@ -3,7 +3,6 @@ import { GoFileDirectory } from "react-icons/go";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import Container from "../Container/Container";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
-import { Link } from "react-router-dom";
 
 const OthersProjectCard = () => {
   const [showAll, setShowAll] = useState(false);
@@ -13,84 +12,84 @@ const OthersProjectCard = () => {
       title: "Book-Store",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://fretful-temper.surge.sh/",
     },
     {
       title: "Car-Doctor",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://car-doctor-practice-9032d.web.app/",
     },
     {
       title: "job-Portal",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://vast-science.surge.sh/",
     },
     {
       title: "Doctor-AppointMent",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://medisure-healthcare.web.app/",
     },
     {
       title: "Travel-Agency",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://festive-vacation.surge.sh/",
     },
     {
       title: "Match-Box",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://thundering-competition.surge.sh/",
     },
     {
       title: "Home-Repaire",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://assinment-11-44acd.web.app/",
     },
     {
       title: "Birthday-Celebration",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://assinment9.web.app/",
     },
     {
       title: "Car-Doctor",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://car-doctor-practice-9032d.web.app/",
     },
     {
       title: "Car-Doctor",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://car-doctor-practice-9032d.web.app/",
     },
     {
       title: "Car-Doctor",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://car-doctor-practice-9032d.web.app/",
     },
     {
       title: "Car-Doctor",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Tailwind CSS", "Node.js"],
+      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
       link: "https://car-doctor-practice-9032d.web.app/",
     },
     // Add more projects as needed
@@ -126,15 +125,17 @@ const OthersProjectCard = () => {
                   <GoFileDirectory className="w-8 h-8 text-designColor" />
                   <BsBoxArrowInUpRight className="w-6 h-6 text-designColor" />
                 </div>
-                <h1 className="text-2xl font-semibold mb-2">{project.title}</h1>
-                <p className="mb-4 text-sm text-gray-400">
+                <h1 className="text-2xl font-semibold mb-2 hover:text-designColor">
+                  {project.title}
+                </h1>
+                <p className="mb-4 text-sm hover:text-designColor">
                   {project.description}
                 </p>
                 <ul className="flex flex-wrap justify-around text-xs font-medium">
                   {project.tech.map((tech, techIndex) => (
                     <li
                       key={techIndex}
-                      className="bg-gray-700 px-2 py-1 rounded-md m-1"
+                      className="bg-gray-700 px-2 py-1 rounded-md m-1 transition-transform transform hover:scale-110 hover:text-designColor"
                     >
                       {tech}
                     </li>

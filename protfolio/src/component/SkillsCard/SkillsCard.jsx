@@ -1,10 +1,4 @@
-import {
-  FaBootstrap,
-  FaCss3Alt,
-  FaHtml5,
-  FaNode,
-  FaReact,
-} from "react-icons/fa";
+import { FaCss3Alt, FaHtml5, FaNode, FaReact } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { MdJavascript } from "react-icons/md";
 import {
@@ -91,7 +85,7 @@ const SkillsCard = () => {
                         size={80}
                         className=" p-3 font-extrabold mx-auto text-[#c4cfde] duration-700"
                       />
-                      <h1 className="text-[#c4cfde] text-3xl font-extrabold">
+                      <h1 className="text-designColor text-3xl font-extrabold">
                         {skill.level}
                       </h1>
                     </div>

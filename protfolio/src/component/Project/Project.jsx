@@ -47,31 +47,44 @@ const Project = () => {
               </p>
               <h3 className="text-2xl font-bold">Book-Store 2.0</h3>
             </div>
-            <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md">
+            <p className="text-sm hover:text-designColor bg-[#112240] p-2 md:p-6 rounded-md transition  transform hover:scale-105">
               An Amazon clone website for visualizing personalized Amazon
               website. View your products, Add your account with{" "}
               <span className="text-textGreen">O-auth</span> and then make the
               purchase using <span className="text-textGreen">Stripe</span>.
             </p>
             <ul className="text-xs md:text-sm  tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-              <li>Next.js</li>
-              <li>Typescript</li>
-              <li>Next-auth</li>
-              <li>Stripe</li>
-              <li>Vercel Deployment</li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Next.js
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Typescript
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Next-auth
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Stripe
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Vercel Deployment
+              </li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
-                className="hover:text-designColor duration-300"
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
                 href="https://github.com/yeasinmiah1272001/backend/tree/main/Book-store"
               >
                 <TbBrandGithub />
               </a>
-              <a className="hover:text-designColor duration-300">
+              <a
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
+                href="https://github.com/yeasinmiah1272001/backend/tree/main/Book-store"
+              >
                 <AiOutlineYoutube />
               </a>
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
                 href="https://fretful-temper.surge.sh/"
               >
                 <RxOpenInNewWindow />
@@ -113,7 +126,7 @@ const Project = () => {
               </p>
               <h3 className="text-2xl font-bold">Book-Store</h3>
             </div>
-            <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md xl:-mr-48">
+            <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md xl:-mr-48 transition hover:text-designColor  transform hover:scale-105 ">
               A fully functional Cyber Security Blog where you can view the
               latest posts and <span className="text-textGreen">comments</span>{" "}
               on it by sharing your ideas. You can also add your own{" "}
@@ -121,27 +134,37 @@ const Project = () => {
               portal.
             </p>
             <ul className="text-xs md:text-sm font-bodyFont tracking-wide flex gap-2 md:gap-5 justify-between text-darktext">
-              <li>Next.js</li>
-              <li>Typescript</li>
-              <li>Next-auth</li>
-              <li>Sanity</li>
-              <li>React Hook Form</li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Next.js
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Typescript
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Next-auth
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Stripe
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Vercel Deployment
+              </li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
                 href="https://github.com/yeasinmiah1272001/backend/tree/main/Book-store"
               >
                 <TbBrandGithub />
               </a>
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
                 href="https://github.com/yeasinmiah1272001/backend/tree/main/Book-store"
               >
                 <AiOutlineYoutube />
               </a>
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
                 href="https://fretful-temper.surge.sh/"
               >
                 <RxOpenInNewWindow />
@@ -182,34 +205,44 @@ const Project = () => {
               </p>
               <h3 className="text-2xl font-bold">Book-Store 2.0</h3>
             </div>
-            <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md">
+            <p className="text-sm hover:text-designColor bg-[#112240] p-2 md:p-6 rounded-md transition  transform hover:scale-105">
               An Amazon clone website for visualizing personalized Amazon
               website. View your products, Add your account with{" "}
               <span className="text-textGreen">O-auth</span> and then make the
               purchase using <span className="text-textGreen">Stripe</span>.
             </p>
-            <ul className="text-xs md:text-sm font-bodyFont tracking-wide flex gap-2 md:gap-5 justify-between text-darktext">
-              <li>Next.js</li>
-              <li>Typescript</li>
-              <li>Next-auth</li>
-              <li>Stripe</li>
-              <li>Vercel Deployment</li>
+            <ul className="text-xs md:text-sm font-bodyFont tracking-wide flex gap-2 md:gap-5 justify-between ">
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Next.js
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Typescript
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Next-auth
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Stripe
+              </li>
+              <li className="hover:text-designColor transition  transform hover:scale-110">
+                Vercel Deployment
+              </li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
                 href="https://github.com/yeasinmiah1272001/backend/tree/main/Book-store"
               >
                 <TbBrandGithub />
               </a>
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
                 href="https://github.com/yeasinmiah1272001/backend/tree/main/Book-store"
               >
                 <AiOutlineYoutube />
               </a>
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textGreen duration-300 hover:text-designColor transition  transform hover:scale-150"
                 href="https://fretful-temper.surge.sh/"
               >
                 <RxOpenInNewWindow />

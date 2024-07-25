@@ -7,32 +7,27 @@ import Header from "../Header/Header";
 import OthersProjectCard from "../OthersProjectCard/OthersProjectCard";
 import Project from "../Project/Project";
 import ScrollBar from "../ScrollBar/ScrollBar";
-// import SkillProgress from "../SkillProgress/SkillProgress";
 import Skills from "../Skills/Skills";
-
 import WhatNext from "../WhatNext/WhatNext";
-import SkillsCard from './../SkillsCard/SkillsCard';
-
+import SkillsCard from "./../SkillsCard/SkillsCard";
 
 const Home = () => {
-       return (
-         <div className="min-h-screen bg-primaryColor font-bodyFont text-lightColor">
-           <Header></Header>
-           <Banner></Banner>
-           <About></About>
-           <Skills></Skills>
-           {/* <SkillProgress></SkillProgress> */}
-           <SkillsCard></SkillsCard>
-           
-           <Experieance></Experieance>
-           <Project></Project>
-           <OthersProjectCard></OthersProjectCard>
-           <WhatNext></WhatNext>
-           <Contact></Contact>
-           <Footer></Footer>
-           <ScrollBar></ScrollBar>
-         </div>
-       );
+  return (
+    <div className="min-h-screen bg-primaryColor font-bodyFont text-lightColor">
+      <Header></Header>
+      <Banner></Banner>
+      <About></About>
+      <Skills></Skills>
+      <SkillsCard></SkillsCard>
+      <Experieance></Experieance>
+      <Project></Project>
+      <OthersProjectCard></OthersProjectCard>
+      <WhatNext></WhatNext>
+      <Contact></Contact>
+      <Footer></Footer>
+      <ScrollBar></ScrollBar>
+    </div>
+  );
 };
 
 export default Home;

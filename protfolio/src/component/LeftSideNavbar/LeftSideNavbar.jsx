@@ -37,12 +37,12 @@ const LeftSideNavbar = () => {
   ];
 
   return (
-    <div className="fixed hidden md:block mt-16">
+    <div className="fixed hidden md:block mt-20">
       <ul className="m-8 space-y-8">
         {icons.map((item, index) => {
           const IconComponent = item.icon;
           return (
-            <li key={index}>
+            <li key={index} className="relative group">
               <motion.div
                 initial={initialAnimation}
                 animate={{
@@ -52,13 +52,13 @@ const LeftSideNavbar = () => {
                 whileHover={hoverAnimation}
               >
                 <Link to={item.link} className="hover:text-designColor">
-                  <IconComponent className="w-8 h-10 rounded-full" />
+                  <IconComponent className="w-6 h-6 rounded-full" />
                 </Link>
               </motion.div>
-             
             </li>
           );
         })}
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-[1px] h-24 bg-designColor group-hover:bg-designColor transition duration-300"></div>
       </ul>
     </div>
   );

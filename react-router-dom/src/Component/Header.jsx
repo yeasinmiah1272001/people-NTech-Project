@@ -16,21 +16,24 @@ const Header = () => {
 
 
        return (
-              <div className="flex items-center justify-between p-6 bg-gray-400">
-                     <h1>Logo</h1>
-                    <ul className="flex gap-6  uppercase underline">
-                     {
-                            navbar.map((item) => (
-                                   <Link
-                                   className={`${pathName === item.path ? "text-red-600" : "text-black"}`}
-                                    to={item.path}  key={item.title}>{item.title}</Link>
-                            ))
-                     }
-                     
-                    </ul>
-                   
-                     
-              </div>
+         <div className="flex items-center justify-between p-6 bg-gray-400">
+           <h1>Logo</h1>
+           <ul className="flex gap-6  uppercase underline">
+             {navbar.map((item) => (
+     
+                 <Link
+                   className={`${
+                     pathName === item.path ? "text-red-600" : "text-black"
+                   }`}
+                   to={item.path}
+                   key={item.title}
+                 >
+                   {item.title}
+                 </Link>
+   
+             ))}
+           </ul>
+         </div>
        );
 };
 

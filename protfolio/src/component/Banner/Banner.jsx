@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import LeftSideNavbar from "../LeftSideNavbar/LeftSideNavbar";
 import RightSideNavbar from "../RightSideNavbar/RightSideNavbar";
+import logo from "../../assets/nameLogo.png";
 
 const Banner = () => {
   const stringValue = ["I build things for the web", "Frontend Developer"];
@@ -30,7 +31,11 @@ const Banner = () => {
           transition={{ duration: 0.3, delay: 0.4 }}
           className="text-4xl lg:text-6xl font-bold leading-tight"
         >
-          Yeasin Ahmed
+          <span>
+            {" "}
+             Yeasin Ahmed
+          </span>
+
           <span className="block text-3xl lg:text-4xl font-semibold text-designColor mt-2">
             <Typewriter
               options={{
@@ -48,10 +53,10 @@ const Banner = () => {
           transition={{ duration: 0.3, delay: 0.5 }}
           className="text-sm lg:text-base leading-relaxed"
         >
-          I am a web developer with 1+ years of experience in React.  I have a
+          I am a web developer with 1+ years of experience in React. I have a
           strong foundation in <br /> front-end & back-end development and am
-          skilled in creating user-friendly and <br /> responsive web  applications
-          using <br /> React and its ecosystem.
+          skilled in creating user-friendly and <br /> responsive web
+          applications using <br /> React and its ecosystem.
         </motion.p>
 
         <motion.a
